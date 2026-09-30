@@ -16,15 +16,18 @@ nav{
     padding-left: 40px;
     font-size: 20px;
     color: rgb(38, 3, 70);
+    cursor: pointer;
 }
 .left p{
     font-size: 17px;
     color: rgb(3, 3, 54);
+    cursor: pointer;
 }
 .left span{
     display: inline-block;
     transform: rotate(90deg);
     font: 20px;
+    cursor: pointer;
 }
 .right{
     display: flex;
@@ -39,13 +42,16 @@ nav{
     height: 40px;
     border-radius: 20px;
     border-color: purple lightseagreen dodgerblue;
+    cursor: pointer;
 
 }
 .right h2{
     font-size: 15px;
+    cursor: pointer;
 }
 .right p{
     padding-right: 40px;
+    cursor: pointer;
 }
 .hero{
     display: flex;
@@ -87,6 +93,10 @@ section:first-of-type{
     display: flex;
     justify-content: space-between;
 }
+.sec p{
+    cursor: pointer;
+}
+
 .sec-left{
     display: flex;
     gap: 20px;
@@ -170,6 +180,7 @@ section:first-of-type{
     justify-content: space-between;
     border-bottom: 1px solid grey;
     height: auto;
+    cursor: pointer;
 }
 .li{
     border: none;
@@ -232,8 +243,12 @@ section:last-of-type{
     cursor: pointer;
 }
 @media (max-width:600px){
+    .left span{
+        display: none;
+    }
     .left{
         flex-direction: column;
+        gap: 0px;
     }
     .right{
         position: absolute;
@@ -242,15 +257,18 @@ section:last-of-type{
     }
     .sec{
         flex-direction: column;
+        gap: 0px;
     }
     .sec span{
         display: none;
     }
     .sec-right{
         flex-direction: column;
+        gap: 0px;
     }
     .sec-left{
         flex-direction: column;
+        gap: 0px;
     }
     .card-grid{
         grid-template-columns: 1fr;
